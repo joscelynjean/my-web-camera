@@ -9,6 +9,7 @@
       "webRoot": "${workspaceFolder}"
     },
     {
+      "port": 9876,
       "name": "Attach Chrome",
       "type": "chrome",
       "request": "attach",

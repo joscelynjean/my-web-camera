@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CameraModule } from './camera/camera.module';
 import { NgModule } from '@angular/core';
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +10,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CameraModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
