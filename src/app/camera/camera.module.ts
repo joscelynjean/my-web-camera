@@ -3,20 +3,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CameraComponent } from './camera.component';
 
-import {MatButtonModule} from '@angular/material/button';
+// Angular material
+import { MatSelectModule } from '@angular/material/select';
 
 const routes: Routes = [
-    {
-        path: 'camera',
-        component: CameraComponent
-    }
+  {
+    path: 'camera',
+    component: CameraComponent
+  }
 ];
 
 @NgModule({
-    imports: [CommonModule, RouterModule.forChild(routes), MatButtonModule],
-    exports: [RouterModule],
-    declarations: [CameraComponent],
-    providers: []
+  imports: [CommonModule, RouterModule.forChild(routes), MatSelectModule],
+  exports: [RouterModule],
+  declarations: [CameraComponent],
+  providers: []
 })
 export class CameraModule { }
 
