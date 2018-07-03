@@ -1,15 +1,5 @@
-<h3>Raised Buttons</h3>
-<div class="button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-  <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
-</div>
+<h1>My web camera</h1>
 <div>
-  <h1>Camera module loaded</h1>
-  <ul *ngFor="let videoInputDevice of videoInputDevices; let i = index">
-    <li>{{videoInputDevice.label}}</li>
-</ul>
+  <video #videoForCameraStream autoplay="true"></video>
 </div>
+<div></div>
