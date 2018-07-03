@@ -1,4 +1,11 @@
 <h1>My web camera</h1>
+<div *ngIf="cameras.length <= 0">No camera found!</div>
+<mat-form-field *ngIf="cameras.length > 0">
+  <mat-select placeholder="Select camera" (selectionChange)="handleCameraChange($event)">
+    <mat-option>None</mat-option>
+    <mat-option *ngFor="let camera of cameras" [value]="camera.deviceId">{{camera.label}}</mat-option>
+  </mat-select>
+</mat-form-field>
 <div>
   <video #videoForCameraStream autoplay="true"></video>
 </div>
